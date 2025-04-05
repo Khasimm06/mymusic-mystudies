@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KKGL7FL3VV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KKGL7FL3VV');
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYSTUDIES[1th-year] - H6</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body >
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button onclick="searchFunction()">
+            <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search Icon">
+        </button>
+    </div>
+    
+    <p id="searchResult"></p>
+    <script>
+        function searchFunction() {
+        var searchValue = document.getElementById("searchInput").value.toLowerCase(); 
+        var pageContent = document.body.innerText.toLowerCase(); 
+    
+        if (searchValue) {
+            if (pageContent.includes(searchValue)) {
+                highlightSearch(searchValue);  
+            } else {
+                document.getElementById("searchResult").innerHTML = "No matches found for: " + searchValue;
+            }
+        } else {
+            document.getElementById("searchResult").innerHTML = "Please enter a search term.";
+        }
+    }
+    
+    function highlightSearch(searchValue) {
+        removeHighlights();
+        var regex = new RegExp("(" + searchValue + ")", "gi");
+        document.body.innerHTML = document.body.innerHTML.replace(regex, '<span class="highlight">$1</span>');
+        var firstMatch = document.querySelector('.highlight');
+        if (firstMatch) {
+            firstMatch.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+    }
+    
+    function removeHighlights() {
+        var highlighted = document.querySelectorAll('.highlight');
+        highlighted.forEach(function (el) {
+            var parent = el.parentNode;
+            parent.replaceChild(document.createTextNode(el.textContent), el);
+        });
+    }
+    </script>
+    <section class="sub-header"> 
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="4th - Year.html">4th YEAR</a></li>
+                    <li><a href="3rd - Year.html">3rd YEAR</a></li>
+                    <li><a href="2nd - Year.html">2nd YEAR</a></li>
+                    <li><a href="1st - Year.html">1st YEAR</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+         </nav>
+         <script>
+            var navLinks = document.getElementsByClassName("nav-links")[0];
+        
+            function showMenu() {
+                navLinks.classList.add("show");
+            }
+        
+            function hideMenu() {
+                navLinks.classList.remove("show"); 
+            }
+        </script>
+
+     <h1>1st - YEARS</h1>
+    </section>
+    
+    <section class="ECE">
+        <h2> 1st - YEAR [AI&DS] </h2>
+        <p> <b>Here, you can find All subjects PDF's and some important topics <br> Which are usefull for this MID's and Semister End Exams And we will update 
+            further stuff for coming days Link below for Syllabus of all Subjects</b></p>
+        <a href="https://drive.google.com/file/d/18yeuODyTdyZJCkc3G6j7w3XvY8f1wlwI/view?usp=sharing" target="_blank">Download Syllabus</a> 
+        <br><br>
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(1)">
+             <h2>01. COMMUNICATIVE ENGLISH</h2>
+         </div>
+         <div class="item-details" id="details-1">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(101)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(102)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(103)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container"></div>
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(2)">
+             <h2>02. CHEMISTRY</h2>
+         </div>
+         <div class="item-details" id="details-2">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(201)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(202)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(203)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(3)">
+             <h2>03. LINEAR ALGEBRA & CALCULUS </h2>
+         </div>
+         <div class="item-details" id="details-3">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(301)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(302)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(303)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(4)">
+             <h2>04. BASIC CIVIL & MECHANICAL ENGINEERING</h2>
+         </div>
+         <div class="item-details" id="details-4">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(401)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(402)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(403)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(5)">
+             <h2>05. INTRODUCTION TO PROGRAMMING </h2>
+         </div>
+         <div class="item-details" id="details-5">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(501)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(502)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(503)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div><br><br>
+
+
+        <h2> 1st - YEAR [CSE] </h2>
+        <p> <b>Here, you can find All subjects PDF's and some important topics <br> Which are usefull for this MID's and Semister End Exams And we will update 
+            further stuff for coming days Link below for Syllabus of all Subjects</b></p>
+        <a href="https://drive.google.com/file/d/18yeuODyTdyZJCkc3G6j7w3XvY8f1wlwI/view?usp=sharing" target="_blank">Download Syllabus</a> 
+        <br><br>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(6)">
+             <h2>01. COMMUNICATIVE ENGLISH</h2>
+         </div>
+         <div class="item-details" id="details-6">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(601)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(602)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(603)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container"></div>
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(7)">
+             <h2>02. CHEMISTRY</h2>
+         </div>
+         <div class="item-details" id="details-7">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(701)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(702)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(703)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(8)">
+             <h2>03. LINEAR ALGEBRA & CALCULUS</h2>
+         </div>
+         <div class="item-details" id="details-8">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(801)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(802)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(803)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(9)">
+             <h2>04. BASIC CIVIL AND MECHANICAL ENGINEERING</h2>
+         </div>
+         <div class="item-details" id="details-9">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(901)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(902)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(903)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(10)">
+             <h2>05. INTRODUCTION TO PROGRAMMING</h2>
+         </div>
+         <div class="item-details" id="details-10">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1001)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1002)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1003)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div><br><br>
+
+        <h2> 1st - YEAR [ECE] </h2>
+        <p> <b>Here, you can find All subjects PDF's and some important topics <br> Which are usefull for this MID's and Semister End Exams And we will update 
+            further stuff for coming days Link below for Syllabus of all Subjects</b></p>
+        <a href="https://drive.google.com/file/d/18yeuODyTdyZJCkc3G6j7w3XvY8f1wlwI/view?usp=sharing" target="_blank">Download Syllabus</a> 
+        <br><br>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(11)">
+             <h2>01. COMMUNICATIVE ENGLISH</h2>
+         </div>
+         <div class="item-details" id="details-11">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1101)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1102)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1103)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container"></div>
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(12)">
+             <h2>02. ENGINEERING PHYSICS </h2>
+         </div>
+         <div class="item-details" id="details-12">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1201)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1202)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1203)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(13)">
+             <h2>03. LINEAR AKGEBRA & CALCULUS </h2>
+         </div>
+         <div class="item-details" id="details-13">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1301)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1302)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1303)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(14)">
+             <h2>04. BEEE</h2>
+         </div>
+         <div class="item-details" id="details-14">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1401)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1402)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1403)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(15)">
+             <h2>05. IT WORK-SHOP</h2>
+         </div>
+         <div class="item-details" id="details-15">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1501)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1502)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1503)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div><br><br>
+        
+        <h2> 1st - YEAR [EEE] </h2>
+        <p> <b>Here, you can find All subjects PDF's and some important topics <br> Which are usefull for this MID's and Semister End Exams And we will update 
+            further stuff for coming days Link below for Syllabus of all Subjects</b></p>
+        <a href="https://drive.google.com/file/d/18yeuODyTdyZJCkc3G6j7w3XvY8f1wlwI/view?usp=sharing" target="_blank">Download Syllabus</a> 
+        <br><br>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(16)">
+             <h2>01. COMMUNICATIVE ENGLISH</h2>
+         </div>
+         <div class="item-details" id="details-16">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1601)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1602)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1603)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container"></div>
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(17)">
+             <h2>02. ENGINEERING PHYSICS</h2>
+         </div>
+         <div class="item-details" id="details-17">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1701)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1702)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1703)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(18)">
+             <h2>03. LINEAR ALGEBRA & CALCULUS </h2>
+         </div>
+         <div class="item-details" id="details-18">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1801)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1802)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1803)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(19)">
+             <h2>04. BEEE</h2>
+         </div>
+         <div class="item-details" id="details-19">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1901)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1902)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1903)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(20)">
+             <h2>05. IT WORK-SHOP</h2>
+         </div>
+         <div class="item-details" id="details-20">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2001)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2002)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2003)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div><br><br>
+
+
+        <h2> 1st - YEAR [IT] </h2>
+        <p> <b>Here, you can find All subjects PDF's and some important topics <br> Which are usefull for this MID's and Semister End Exams And we will update 
+            further stuff for coming days Link below for Syllabus of all Subjects</b></p>
+        <a href="https://drive.google.com/file/d/18yeuODyTdyZJCkc3G6j7w3XvY8f1wlwI/view?usp=sharing" target="_blank">Download Syllabus</a> 
+        <br><br>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(21)">
+             <h2>01. COMMUNICATIVE ENGLISH</h2>
+         </div>
+         <div class="item-details" id="details-21">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2101)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2102)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2103)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container"></div>
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(22)">
+             <h2>02. CHEMISTRY </h2>
+         </div>
+         <div class="item-details" id="details-22">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2201)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2202)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2203)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(23)">
+             <h2>03. LINEAR ALGEBAR & CALCULUS </h2>
+         </div>
+         <div class="item-details" id="details-23">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2301)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2302)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2303)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(24)">
+             <h2>04. BASIC CIVIL & MECHANICAL ENGINEERING</h2>
+         </div>
+         <div class="item-details" id="details-24">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2401)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2402)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2403)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(25)">
+             <h2>05. INTRODUCTION TO PROGRAMMING</h2>
+         </div>
+         <div class="item-details" id="details-25">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2501)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2502)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2503)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div><br><br>
+
+
+        <h2> 1st - YEAR [MECH] </h2>
+        <p> <b>Here, you can find All subjects PDF's and some important topics <br> Which are usefull for this MID's and Semister End Exams And we will update 
+            further stuff for coming days Link below for Syllabus of all Subjects</b></p>
+        <a href="https://drive.google.com/file/d/18yeuODyTdyZJCkc3G6j7w3XvY8f1wlwI/view?usp=sharing" target="_blank">Download Syllabus</a> 
+        <br><br>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(26)">
+             <h2>01.COMMUNICATIVE ENGLISH</h2>
+         </div>
+         <div class="item-details" id="details-26">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2601)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2602)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2603)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container"></div>
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(27)">
+             <h2>02. ENGINEERING PHYSICS </h2>
+         </div>
+         <div class="item-details" id="details-27">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2701)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2702)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2703)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(28)">
+             <h2>03. LINEAR ALGEBRA & CALCULUS </h2>
+         </div>
+         <div class="item-details" id="details-28">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2801)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2802)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2803)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(29)">
+             <h2>04. BASIC CIVIL & MECHANICAL ENGINEERING</h2>
+         </div>
+         <div class="item-details" id="details-29">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2901)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2902)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2903)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(30)">
+             <h2>05. IT WORK-SHOP</h2>
+         </div>
+         <div class="item-details" id="details-30">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3001)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3002)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3003)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>
+             </div>   
+             </div>
+        </div>
+
+        <style>
+            a {
+                text-decoration: underline;
+                color: blue;
+            }
+        
+            h2 {
+                color: red;
+            }
+        
+            .unit-content {
+                text-align: left;
+                padding-left: 10px;
+            }
+        
+            .item {
+                text-align: left;
+            }
+        
+            .item-details {
+                display: none;
+            }
+        </style>
+        <script>function toggleDetails(itemNumber) {
+            const detailsElement = document.getElementById(`details-${itemNumber}`);
+            
+            // Toggle visibility
+            if (detailsElement.style.display === "block") {
+                detailsElement.style.display = "none";
+            } else {
+                detailsElement.style.display = "block";
+            }
+            }
+        </script>
+        
+    </section>
+   
+    
+    <!------Footer-------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p><b>Self-motivated and hardworking Student seeking an opportunity to work In a challenging <br> Environment to
+            prove my skills and utilize my knowledge.<br> Made by ('-') kasi [H6] </b>
+        </p>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KKGL7FL3VV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KKGL7FL3VV');
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYSTUDIES[4th-year] - H6</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body >
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button onclick="searchFunction()">
+            <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search Icon">
+        </button>
+    </div>
+    
+    <p id="searchResult"></p>
+    <script>
+        function searchFunction() {
+        var searchValue = document.getElementById("searchInput").value.toLowerCase(); 
+        var pageContent = document.body.innerText.toLowerCase(); 
+    
+        if (searchValue) {
+            if (pageContent.includes(searchValue)) {
+                highlightSearch(searchValue);  
+            } else {
+                document.getElementById("searchResult").innerHTML = "No matches found for: " + searchValue;
+            }
+        } else {
+            document.getElementById("searchResult").innerHTML = "Please enter a search term.";
+        }
+    }
+    
+    function highlightSearch(searchValue) {
+        removeHighlights();
+        var regex = new RegExp("(" + searchValue + ")", "gi");
+        document.body.innerHTML = document.body.innerHTML.replace(regex, '<span class="highlight">$1</span>');
+        var firstMatch = document.querySelector('.highlight');
+        if (firstMatch) {
+            firstMatch.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+    }
+    
+    function removeHighlights() {
+        var highlighted = document.querySelectorAll('.highlight');
+        highlighted.forEach(function (el) {
+            var parent = el.parentNode;
+            parent.replaceChild(document.createTextNode(el.textContent), el);
+        });
+    }
+    </script>
+    <section class="sub-header"> 
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="4th - Year.html">4th YEAR</a></li>
+                    <li><a href="3rd - Year.html">3rd YEAR</a></li>
+                    <li><a href="2nd - Year.html">2nd YEAR</a></li>
+                    <li><a href="1st - Year.html">1st YEAR</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+         </nav>
+         <script>
+            var navLinks = document.getElementsByClassName("nav-links")[0];
+        
+            function showMenu() {
+                navLinks.classList.add("show");
+            }
+        
+            function hideMenu() {
+                navLinks.classList.remove("show"); 
+            }
+        </script>
+
+     <h1>4th - YEARS</h1>
+    </section>
+   
+    <section class="ECE">
+        <h2 > 4th - YEAR [ECE] </h2>
+        <p> <b>Here, you can find All subjects PDF's and some important topics <br> Which are usefull for this MID's and Semister End Exams And we will update 
+            further stuff for coming days Link below for Syllabus of all Subjects</b></p>
+        <a href="https://drive.google.com/file/d/18yeuODyTdyZJCkc3G6j7w3XvY8f1wlwI/view?usp=sharing" target="_blank">Download Syllabus</a> 
+        <br><br>
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(1)">
+             <h2>01. Optical Communication</h2>
+         </div>
+         <div class="item-details" id="details-1">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(101)">
+                 <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="https://drive.google.com/file/d/1Q4N2T6lpvkR31VdyrsL3QdX5XlC-S6-7/view?usp=drive_link">Download PDF</a></p>
+                 <a href="https://drive.google.com/file/d/1ZvlLtfc5eCytIfAO_HPxgzDQ4fcu8g53/view?usp=drive_link">Download PPT</a>
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(102)">
+                 <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="https://drive.google.com/file/d/1sT7iyOncJW67nUhdgCfoqhkBSSgv33t0/view?usp=drive_link">Download PDF</a></p>
+                 <a href="https://drive.google.com/file/d/1tNaK9yh0tRmOxyI-xXJPe7iBjlTf_WW9/view?usp=drive_link">Download PPT</a>
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(103)">
+                 <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="https://drive.google.com/file/d/1OlGOqB9K96IfHg3us2kDkCYIMfW3x5Hr/view?usp=drive_link">Download PDF</a></p>
+                 <a href="https://drive.google.com/file/d/1nMH0blKilLTUvril5E7_ZziDSYsTPb-n/view?usp=drive_link">Download PPT</a>
+             </div>
+             <div class="nested-item-header" onclick="toggleNestedDetails(104)">
+                <h4>Unit 5: PDF's & PPT's</h4>
+                <p><a href="https://docs.google.com/document/d/1bV9Iss48KNKYjMnR5ezM9jUdjKNpw5jJ/edit?usp=sharing&ouid=111265512540312367006&rtpof=true&sd=true">Download PDF</a></p>
+            </div>
+            <div class="nested-item-header" onclick="toggleNestedDetails(105)">
+                <h4>Unit 4: PDF's & PPT's</h4>
+                <p><a href="https://docs.google.com/document/d/12GRxjhjLkAwk6khY3rZA-TeAYtl10jA1/edit?usp=sharing&ouid=111265512540312367006&rtpof=true&sd=true">Download PDF</a></p>
+                <a href="https://docs.google.com/presentation/d/135WRR0DS9Hea8QOyD3eTJT-siiS_PZKp/edit?usp=sharing&ouid=111265512540312367006&rtpof=true&sd=true">Download PPT 1</a><br><br>
+                <a href="https://docs.google.com/presentation/d/1du460BwY9roSdMV3PUjoMZgB0qHDZe_b/edit?usp=sharing&ouid=111265512540312367006&rtpof=true&sd=true">Download PPT 2</a>
+            </div>
+
+             <div class="nested-item-header" onclick="toggleNestedDetails(106)">
+                <h4>Mid-1 Question Paper</h4>
+                <a href="https://drive.google.com/file/d/1b3kz1Tr40DYtz5G1kSoNasduNDQbrwF9/view?usp=drive_link">Download Mid-1 Que papers</a>
+             </div>
+             <div class="nested-item-header" onclick="toggleNestedDetails(107)"><h4>Assignment-1 Q/A </h4>
+                <a href="https://drive.google.com/file/d/1L7MMlpK4DegaBS4XpPtASmO0JmKFvdY9/view?usp=drive_link">Download Assignment-1 Q/A</a>
+            </div>
+                
+             </div>
+        </div>
+        <div class="item">
+            <div class="item-header" onclick="toggleDetails(2)">
+                <h2>02. WIRELESS SENSOR NETWORKS</h2>
+            </div>
+            <div class="item-details" id="details-2">
+                <!-- Unit 1 -->
+                <div class="nested-item-header" onclick="toggleNestedDetails(201)">
+                    <h4>Unit 1: PDF's & PPT's</h4>
+                    <p><a href="https://drive.google.com/file/d/12hgwvHG_KpeeVLNY_OfqHy2r8wSFoLyC/view?usp=drive_link">Download PDF</a></p>
+                    <a href="https://drive.google.com/file/d/1sbiEM8BVEIG_N9BDBJqmSofDDCnasdhM/view?usp=drive_link">Download PPT</a>
+                </div>
+                <!-- Unit 2 -->
+                <div class="nested-item-header" onclick="toggleNestedDetails(202)">
+                    <h4>Unit 2: PDF's & PPT's</h4>
+                    <p><a href="https://drive.google.com/file/d/12hgwvHG_KpeeVLNY_OfqHy2r8wSFoLyC/view?usp=drive_link">Download PDF</a></p>
+                    <p><a href="https://drive.google.com/file/d/1jm3o4FrBH2b1AU6r8S1LPwBjdGGw_lQm/view?usp=drive_link">Download PPT Part A</a></p>
+                    <a href="https://docs.google.com/presentation/d/1LLfO0X5YZT8cMMZ8O3FWy0jH4-kG_cYM/edit?usp=drive_link&ouid=113633834326158831672&rtpof=true&sd=true">Download PPT Part B</a>
+                </div>
+                <!-- Unit 3 -->
+                <div class="nested-item-header" onclick="toggleNestedDetails(203)">
+                    <h4>Unit 3: PDF's & PPT's</h4>
+                    <a href="https://docs.google.com/presentation/d/1AjAnTsAGar0jPyprCn1nED2HgmLHsvnj/edit?usp=drive_link&ouid=113633834326158831672&rtpof=true&sd=true">Download PPT</a><br>
+                    <a href="https://drive.google.com/file/d/1zU7X4oXMm8bM_-FO7AL72qcFUoYIKMNO/view?usp=sharing">Download PDF</a>
+                </div >
+                <div class="nested-item-header" onclick="toggleNestedDetails(204)">
+                    <h4>Unit 4: PDF's & PPT's</h4>
+                    <a href="https://docs.google.com/presentation/d/1XAWNFd4ccQ0GtWSfEeiLHq71SkLFctYR/edit?usp=sharing&ouid=111265512540312367006&rtpof=true&sd=true">Download PPT 1</a><br>
+                    <a href="https://docs.google.com/presentation/d/1v0-4SXcXt7qVV8FvJSnbcE5QBPUNngfu/edit?usp=sharing&ouid=111265512540312367006&rtpof=true&sd=true">Download PPT 2</a><br>
+                    <a href="https://docs.google.com/presentation/d/1HMw4-R-cFiXHV69KbzN99oEAzXgjZzbb/edit?usp=sharing&ouid=111265512540312367006&rtpof=true&sd=true">Download PPT 3</a><br>
+                    <a href="https://drive.google.com/file/d/1-ZkhTrLDr0oLwdWCdR4CavH_0JCaCgzE/view?usp=sharing">Download PDF</a>
+                </div>
+                <div class="nested-item-header" onclick="toggleNestedDetails(205)">
+                    <h4>Unit 5: PDF's & PPT's</h4>
+                    <a href="https://drive.google.com/file/d/10WZBvoBGtOM9TzMXE8iQ8HIQuwA-wMrx/view?usp=sharing">Download PDF</a>
+                </div>
+                <div class="nested-item-header" onclick="toggleNestedDetails(206)">
+                    <h4> Mid-1 Question Papper</h4>
+                    <p><a href="https://drive.google.com/file/d/1b3kz1Tr40DYtz5G1kSoNasduNDQbrwF9/view?usp=drive_link">Download Mid-1 Que papers</a></p>
+                    <a href="https://drive.google.com/file/d/1UHy27S3kRRWliVNpfmd44raeDXArj9Ib/view?usp=drive_link">Download Mid-1 Ans </a>
+                </div>
+                <div class="nested-item-header" onclick="toggleNestedDetails(207)">
+                    <h4>Assignment-1 Q/A</h4>
+                    <a href="https://drive.google.com/file/d/1-LFiolrXQG8Q1xcU5ggWiyr_rN018CJY/view?usp=drive_link">Download Assignment-1 Q/A's</a>
+                </div>
+                <div class="nested-item-header" onclick="toggleNestedDetails(208)">
+                    <h4>Important Q/A</h4>
+                    <a href="https://drive.google.com/file/d/1Eo7o35V26CIRuwRzRgnOlxiVCrW0uwtH/view?usp=sharing">Download Assignment-1 Q/A's</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-header" onclick="toggleDetails(3)">
+                <h2>03. CELLULAR & MOBILE COMN</h2>
+            </div>
+            <div class="item-details" id="details-3">
+                <!-- Unit 1 -->
+                <div class="nested-item-header" onclick="toggleNestedDetails(301)">
+                    <h4>Unit 1: PDF's & PPT's</h4>
+                    <p><a href="https://drive.google.com/file/d/1NLpC0kBmjVmOlYF5-hkcpqNVKg_ZPw8P/view?usp=drive_link">Download PPT-1</a></p>
+                    <a href="https://docs.google.com/presentation/d/17O8aGu8IuU_Y7lWUbWcSJjgY1gZZCMwx/edit?usp=drive_link&ouid=113633834326158831672&rtpof=true&sd=true">Download PPT-2</a>
+                </div>
+                <!-- Unit 2 -->
+                <div class="nested-item-header" onclick="toggleNestedDetails(302)">
+                    <h4>Unit 2: PDF's & PPT's</h4>
+                    <p><a href="https://drive.google.com/file/d/1H-7v51yn6m82I02lR3567OLVJn6BvhdV/view?usp=drive_link">Download PPT-1</a></p>
+                    <a href="https://docs.google.com/presentation/d/17QlrOwzG16-1XcON43wArimA8BjPfPH9/edit?usp=drive_link&ouid=113633834326158831672&rtpof=true&sd=true">Download PPT-2</a>
+                </div>
+                <!-- Unit 3 -->
+                <div class="nested-item-header" onclick="toggleNestedDetails(303)">
+                    <h4>Unit 3: PDF's & PPT's</h4>
+                    <a href="https://drive.google.com/file/d/1ImkNEjZ0ADpHztFZ8TPMZiyMMRYofAme/view?usp=drive_link">Download PPT</a><br>
+                    <a href="https://drive.google.com/file/d/1gw1tEkP8agHzPPCJtci6T-af-L5JRckw/view?usp=sharing">Download PDF</a>
+                </div>
+                <div class="nested-item-header" onclick="toggleNestedDetails(304)">
+                    <h4>Unit 4: PDF's & PPT's</h4>
+                    <a href="https://drive.google.com/file/d/1OAXTvOy8UdaiqgSH62GTdkLKHxx6qKep/view?usp=sharing">Download PDF</a>
+                </div>
+                <div class="nested-item-header" onclick="toggleNestedDetails(305)">
+                    <h4>Unit 5: PDF's & PPT's</h4>
+                    <a href="https://docs.google.com/presentation/d/1t9nZw40gNhcFmWE3Vxof3n9FraYkDZEV/edit?usp=sharing&ouid=111265512540312367006&rtpof=true&sd=true">Download PPT</a>
+                </div>
+                <div class="nested-item-header" onclick="toggleNestedDetails(306)">
+                    <h4>Mid-1 Question Paper</h4>
+                    <a href="https://drive.google.com/file/d/1b3kz1Tr40DYtz5G1kSoNasduNDQbrwF9/view?usp=drive_link">Download Mid-1 Que papers</a>
+                 </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-header" onclick="toggleDetails(4)">
+                <h2>04. ARTIFICIAL INTELLIGENCE </h2>
+            </div>
+            <div class="item-details" id="details-4">
+                <!-- Unit 1 -->
+                <div class="nested-item-header" onclick="toggleNestedDetails(401)">
+                    <h4>Unit 1: PDF's & PPT's</h4>
+                    <p>Introduction : <a href="https://drive.google.com/file/d/1HfrQ0wP3ElI9zowgX6nQTQW_S919tpQx/view?usp=drive_link">Download PDF</a></p>
+                    <p>Agents : <a href="https://drive.google.com/file/d/1ruqmq6kWUKtDdEmuwXty8pFq16HOmfBs/view?usp=drive_link">Download PPT</a></p>
+                    <p>L1 : <a href="https://drive.google.com/file/d/1heBxEMrLSdl_OJD8zSR78g3SIBhy3cqu/view?usp=drive_link">Download PDF</a></p>
+                    <p>L2 : <a href="https://drive.google.com/file/d/1tnnp3XUXF8xo5GPGoisWlppKITXTI9Hh/view?usp=drive_link">Download PDF</a></p>
+                    <p>L3 : <a href="https://drive.google.com/file/d/1Hg0Zx32OHUVi_UfcbZA8h-v_jmfXUe4s/view?usp=drive_link">Download PDF</a></p>
+                    <p>Nature : <a href="https://drive.google.com/file/d/17a903642wkwyGimJ7azVT5VNIY7nbk-G/view?usp=drive_link">Download PDF</a></p>
+                </div>
+                <!-- Unit 2 -->
+                <div class="nested-item-header" onclick="toggleNestedDetails(402)">
+                    <h4>Unit 2: PDF's & PPT's</h4>
+                   <p>A : <a href="https://drive.google.com/file/d/1PvhxmkicSecQ_yJdTUaHUX_fscrn8JjX/view?usp=drive_link">Download PDF</a></p>
+                    <p>AO : <a href="https://drive.google.com/file/d/1BZWNTlvBPJP4OuMKFHxWsYn2FHkGS378/view?usp=drive_link">Download PDF</a></p>
+                    <p>PART-1 : <a href="https://drive.google.com/file/d/1Rqw666NC1qKxpyWumKfCEAu38nI0uVZ9/view?usp=drive_link">Download PDF</a></p>
+                    <p>PART-2 : <a href="https://drive.google.com/file/d/1QLqbDmZKQDWsLUvPN96K0tyGAHPpq05V/view?usp=drive_link">Download PDF</a></p>
+                    <p>Local Search : <a href="https://drive.google.com/file/d/1DoqpXqo0meyOtiBGiiDv0GEqkvkaIPim/view?usp=drive_link">Download PDF</a></p>
+                    <p>SNA : <a href="https://drive.google.com/file/d/1ZC4NNUZAbkLWxiF5GSnEGDI7GjVe9lSK/view?usp=drive_link">Download PDF</a>
+                </div>
+                
+                <!-- Unit 3 -->
+                <div class="nested-item-header" onclick="toggleNestedDetails(403)">
+                    <h4>1 to 5 units PDF</h4>
+                    <p><a href="https://drive.google.com/file/d/1hTIoGqdngTCZngDXpsQ_4PU963HdLDgw/view?usp=sharing">Download PDF</a></p>
+                </div>
+                <div class="nested-item-header" onclick="toggleNestedDetails(404)">
+                    <h4>Unit 4: PDF's & PPT's</h4>
+                    <p><a href="https://drive.google.com/file/d/1b4YN-UKkM9rflaR1lb9wy85cpfwSwhHg/view?usp=sharing">Download PDF</a></p>
+                </div>
+                <div class="nested-item-header" onclick="toggleNestedDetails(405)">
+                    <h4>Unit 5: PDF's & PPT's</h4>
+                    <p><a href="https://docs.google.com/document/d/1PocGlXJ25nYOUhBk1kTDPO54yCqcMsDE/edit?usp=sharing&ouid=111265512540312367006&rtpof=true&sd=true">Download PDF</a></p>
+                    <a href="https://drive.google.com/file/d/1ekk92vCBxeOwKXdcAD3chcPNly6H4SGR/view?usp=sharing">Download PDF</a>
+                </div>
+                <div class="nested-item-header" onclick="toggleNestedDetails(406)">
+                    <h4> Mid-1 Objective bits</h4>
+                    Mid-1 Obj : <a href="https://drive.google.com/file/d/1rQ-ZNu5EETEAkhPCdz6Vlx36jN2ERimB/view?usp=drive_link">Download Mid-1 Obj </a>
+                </div>
+                <div class="nested-item-header" onclick="toggleNestedDetails(407)">
+                    <h4>AI Important Questions</h4>
+                    AI Important Ques : <a href="https://drive.google.com/file/d/1jGKGHppGehIWQs5HIT7RMpGsPIb6Vykf/view?usp=drive_link">Download jpg</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-header" onclick="toggleDetails(5)">
+                <h2>05. CYBER SECURITY & DIGITAL FORENSICS</h2>
+            </div>
+            <div class="item-details" id="details-5">
+                <!-- Unit 1 -->
+                <div class="nested-item-header" onclick="toggleNestedDetails(501)">
+                    <h4>Unit 1: PDF's & PPT's</h4>
+                    <p><a href="https://drive.google.com/file/d/1VEvJaNja5HLkrczPzqdSUiVD6XDi39H8/view?usp=drive_link">Download PDF </a></p>
+                </div>
+                <!-- Unit 2 -->
+                <div class="nested-item-header" onclick="toggleNestedDetails(502)">
+                    <h4>Unit 2: PDF's & PPT's</h4>
+                    <p><a href="https://drive.google.com/file/d/1Gi45xL2IsG6gug7vHGFTIupOMTFD07t8/view?usp=drive_link">Download PDF </a></p>
+                    
+                </div>
+                <!-- Unit 3 -->
+                <div class="nested-item-header" onclick="toggleNestedDetails(503)">
+                    <h4>Unit 3: PDF's & PPT's</h4>
+                    <p><a href="https://drive.google.com/file/d/1sJ6fUNihQIdV1GFlFRZqZICcwedd3mzL/view?usp=drive_link">Download PDF </a></p>
+                </div>
+                <div class="nested-item-header" onclick="toggleNestedDetails(504)">
+                    <h4>Unit 4: PDF's & PPT's</h4>
+                    <p><a href="https://docs.google.com/presentation/d/139f3s4Ze3nFhlTS3ASwGGxCUa8KUzdZH/edit?usp=sharing&ouid=111265512540312367006&rtpof=true&sd=true">Download PDF </a></p>
+                </div>
+                <div class="nested-item-header" onclick="toggleNestedDetails(505)">
+                    <h4>Unit 5: PDF's & PPT's</h4>
+                    <p><a href="https://docs.google.com/presentation/d/1jGPbLjrHSFvBxm344uDca7GGsIOP6ruq/edit?usp=sharing&ouid=111265512540312367006&rtpof=true&sd=true">Download PDF </a></p>
+                </div>
+                <div class="nested-item-header" onclick="toggleNestedDetails(506)">
+                    <h4>Mid-1 Question Paper</h4>
+                    <a href="https://drive.google.com/file/d/1b3kz1Tr40DYtz5G1kSoNasduNDQbrwF9/view?usp=drive_link">Download Mid-1 Que papers</a>
+                 </div>
+                 <div class="nested-item-header" onclick="toggleNestedDetails(507)">
+                    <h4>Mid-2 Imp Q/A</h4>
+                    <p>Mid-2 Imp Q/A : <a href="https://drive.google.com/file/d/1txWX8QWMP2XwySkvtzSKss74yHGpcUip/view?usp=sharing">Download IMG</a></p>
+                 </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-header" onclick="toggleDetails(6)">
+                <h2>06. MANAGEMENT SCIENCE FOR ENGINEERS</h2>
+            </div>
+            <div class="item-details" id="details-6">
+                <!-- Unit 1 -->
+                <div class="nested-item-header" onclick="toggleNestedDetails(601)">
+                    <h4>Unit 1: PDF's & PPT's</h4>
+                    <p><a href="https://drive.google.com/file/d/1Nab3E55SFsHoZYRpbXm-Buvuiv36Lln6/view?usp=drive_link">Download PDF </a>></p>
+                    <p><a href="https://docs.google.com/presentation/d/17dbL7Z9UEb0tvGZRXXTMTyl2yHit71aF/edit?usp=drive_link&ouid=113633834326158831672&rtpof=true&sd=true">Download PPT </a>></p>
+                </div>
+                <!-- Unit 2 -->
+                <div class="nested-item-header" onclick="toggleNestedDetails(602)">
+                    <h4>Unit 2: PDF's & PPT's</h4>
+                    <p><a href="https://drive.google.com/file/d/1hBW7avAKdZI-CmE-0Sw6KmD7e3OyHqWd/view?usp=drive_link">Download PDF </a>></p>
+                    
+                </div>
+                <!-- Unit 3 -->
+                <div class="nested-item-header" onclick="toggleNestedDetails(603)">
+                    <h4>Unit 3: PDF's & PPT's</h4>
+                    <p><a href="https://drive.google.com/file/d/1PU2Lx0qjin50S4Ur6KcGk97xLf4l9Mue/view?usp=drive_link">Download PDF </a>></p>
+                    <p><a href="https://docs.google.com/presentation/d/17ngb7_HW77uNQMEoyXxc4LIoLllZh0Yi/edit?usp=drive_link&ouid=113633834326158831672&rtpof=true&sd=true">Download PPT</a>></p>
+                </div>
+                <div class="nested-item-header" onclick="toggleNestedDetails(604)">
+                    <h4>Mid-1 Question Paper</h4>
+                    <a href="https://drive.google.com/file/d/1b3kz1Tr40DYtz5G1kSoNasduNDQbrwF9/view?usp=drive_link">Download Mid-1 Que papers</a>
+                 </div>
+                 <div class="nested-item-header" onclick="toggleNestedDetails(605)">
+                    <h4>Mid-1 Answers</h4>
+                    <p>Mid-1 Answers PDF : <a href="https://drive.google.com/file/d/1lmzVmUakrVy-DEp-BQfiNjdv6AFfsIih/view?usp=drive_link">Download PDF</a></p>
+                 </div>
+            </div>
+        </div><br><br>
+
+
+        <h2> 4th - YEAR [CSE] </h2>
+        <p> <b>Here, you can find All subjects PDF's and some important topics <br> Which are usefull for this MID's and Semister End Exams And we will update 
+            further stuff for coming days Link below for Syllabus of all Subjects</b></p>
+        <a href="https://drive.google.com/file/d/18yeuODyTdyZJCkc3G6j7w3XvY8f1wlwI/view?usp=sharing" target="_blank">Download Syllabus</a> 
+        <br><br>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(7)">
+             <h2>01. Cloud Computing</h2>
+         </div>
+         <div class="item-details" id="details-7">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(701)">
+                 <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                <!--  <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  --->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(702)">
+                 <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                <!--  <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(703)">
+                 <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!---  <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container"></div>
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(8)">
+             <h2>02. Software Project Management </h2>
+         </div>
+         <div class="item-details" id="details-8">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(801)">
+                 <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                <!--  <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(802)">
+                 <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                <!---  <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(803)">
+                 <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!---  <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(9)">
+             <h2>03. Block Chain Technology </h2>
+         </div>
+         <div class="item-details" id="details-9">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(901)">
+                 <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                <!--- <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(902)">
+                 <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+               <!--- <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(903)">
+                 <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!---  <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(10)">
+             <h2>04. Utilization of Electrical Energy</h2>
+         </div>
+         <div class="item-details" id="details-10">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1001)">
+                 <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                <!--   <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1002)">
+                 <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                <!---  <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1003)">
+                 <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!---  <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(11)">
+             <h2>05. Basics of Civil Engineering</h2>
+         </div>
+         <div class="item-details" id="details-11">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1101)">
+                 <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                <!---  <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1102)">
+                 <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                <!--  <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1103)">
+                 <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!--- <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(12)">
+             <h2>06. Management Science for Engineers</h2>
+         </div>
+         <div class="item-details" id="details-12">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1201)">
+                 <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                <!-- <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1202)">
+                 <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                <!--<p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1203)">
+                 <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!--<p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>   
+             </div>
+        </div><br><br>
+
+        <h2> 4th - YEAR [EEE] </h2>
+        <p> <b>Here, you can find All subjects PDF's and some important topics <br> Which are usefull for this MID's and Semister End Exams And we will update 
+            further stuff for coming days Link below for Syllabus of all Subjects</b></p>
+        <a href="https://drive.google.com/file/d/18yeuODyTdyZJCkc3G6j7w3XvY8f1wlwI/view?usp=sharing" target="_blank">Download Syllabus</a> 
+        <br><br>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(13)">
+             <h2>01. Renewable and Distributed Generation Technologies</h2>
+         </div>
+         <div class="item-details" id="details-13">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1301)">
+                 <h4>We Have No Data - We UPdate Soon....</h4>
+                <!--  <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1302)">
+                 <h4>We Have No Data - We UPdate Soon....</h4>
+                <!-- <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1303)">
+                 <h4>We Have No Data - We UPdate Soon....</h4>
+                 <!-- <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container"></div>
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(14)">
+             <h2>02. Hybrid Electric Vehicles </h2>
+         </div>
+         <div class="item-details" id="details-14">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1401)">
+                 <h4>We Have No Data - We UPdate Soon....</h4>
+                <!-- <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1402)">
+                 <h4>We Have No Data - We UPdate Soon....</h4>
+                <!-- <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1403)">
+                 <h4>We Have No Data - We UPdate Soon....</h4>
+                 <!-- <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(15)">
+             <h2>03. Embedded Systems </h2>
+         </div>
+         <div class="item-details" id="details-15">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1501)">
+                 <h4>We Have No Data - We UPdate Soon....</h4>
+                <!-- <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1502)">
+                 <h4 >We Have No Data - We UPdate Soon....</h4>
+                <!-- <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1503)">
+                 <h4>We Have No Data - We UPdate Soon....</h4>
+                 <!-- <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(16)">
+             <h2>04. Elements of Communication Systems</h2>
+         </div>
+         <div class="item-details" id="details-16">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1601)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1602)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1603)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(17)">
+             <h2>05. Robotics in Automation</h2>
+         </div>
+         <div class="item-details" id="details-17">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1701)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1702)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1703)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(18)">
+             <h2>06. Management Science for Engineers</h2>
+         </div>
+         <div class="item-details" id="details-18">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1801)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1802)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1803)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>   
+             </div>
+        </div><br><br>
+        
+        <h2> 4th - YEAR [IT] </h2>
+        <p> <b>Here, you can find All subjects PDF's and some important topics <br> Which are usefull for this MID's and Semister End Exams And we will update 
+            further stuff for coming days Link below for Syllabus of all Subjects</b></p>
+        <a href="https://drive.google.com/file/d/18yeuODyTdyZJCkc3G6j7w3XvY8f1wlwI/view?usp=sharing" target="_blank">Download Syllabus</a> 
+        <br><br>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(19)">
+             <h2>01. Deep Learning</h2>
+         </div>
+         <div class="item-details" id="details-19">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1901)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1902)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(1903)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container"></div>
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(20)">
+             <h2>02. Soft Computing </h2>
+         </div>
+         <div class="item-details" id="details-20">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2001)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2002)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2003)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(21)">
+             <h2>03. Natural Language Processing </h2>
+         </div>
+         <div class="item-details" id="details-21">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2101)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2102)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2103)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(22)">
+             <h2>04. Utilization of Electrical Energy</h2>
+         </div>
+         <div class="item-details" id="details-22">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2201)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2202)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2203)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(23)">
+             <h2>05. Environmental Sanitation</h2>
+         </div>
+         <div class="item-details" id="details-23">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2301)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2302)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2303)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(24)">
+             <h2>06. Management Science for Engineers</h2>
+         </div>
+         <div class="item-details" id="details-24">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2401)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2402)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2403)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>   
+             </div>
+        </div><br><br>
+
+
+        <h2> 4th - YEAR [AI&DS] </h2>
+        <p> <b>Here, you can find All subjects PDF's and some important topics <br> Which are usefull for this MID's and Semister End Exams And we will update 
+            further stuff for coming days Link below for Syllabus of all Subjects</b></p>
+        <a href="https://drive.google.com/file/d/18yeuODyTdyZJCkc3G6j7w3XvY8f1wlwI/view?usp=sharing" target="_blank">Download Syllabus</a> 
+        <br><br>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(25)">
+             <h2>01. Distributed Operating Systems</h2>
+         </div>
+         <div class="item-details" id="details-25">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2501)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2502)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2503)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container"></div>
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(26)">
+             <h2>02. Software Project Management </h2>
+         </div>
+         <div class="item-details" id="details-26">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2601)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2602)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2603)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(27)">
+             <h2>03. Information Security </h2>
+         </div>
+         <div class="item-details" id="details-27">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2701)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2702)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2703)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(28)">
+             <h2>04. Utilization of Electrical Energy</h2>
+         </div>
+         <div class="item-details" id="details-28">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2801)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2802)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2803)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(29)">
+             <h2>05. Basics of Civil Engineering</h2>
+         </div>
+         <div class="item-details" id="details-29">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2901)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!--   <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2902)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(2903)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(30)">
+             <h2>06. Management Science for Engineers</h2>
+         </div>
+         <div class="item-details" id="details-30">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3001)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3002)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3003)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>   
+             </div>
+        </div><br><br>
+
+
+        <h2> 4th - YEAR [MECH] </h2>
+        <p> <b>Here, you can find All subjects PDF's and some important topics <br> Which are usefull for this MID's and Semister End Exams And we will update 
+            further stuff for coming days Link below for Syllabus of all Subjects</b></p>
+        <a href="https://drive.google.com/file/d/18yeuODyTdyZJCkc3G6j7w3XvY8f1wlwI/view?usp=sharing" target="_blank">Download Syllabus</a> 
+        <br><br>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(31)">
+             <h2>01. Cloud Computing</h2>
+         </div>
+         <div class="item-details" id="details-31">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3101)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3102)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!--- <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3103)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container"></div>
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(32)">
+             <h2>02. Software Project Management </h2>
+         </div>
+         <div class="item-details" id="details-32">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3201)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3202)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!--  <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3203)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(33)">
+             <h2>03. Block Chain Technology </h2>
+         </div>
+         <div class="item-details" id="details-33">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3301)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3302)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3303)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(34)">
+             <h2>04. Utilization of Electrical Energy</h2>
+         </div>
+         <div class="item-details" id="details-10">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3401)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3402)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3403)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(35)">
+             <h2>05. Basics of Civil Engineering</h2>
+         </div>
+         <div class="item-details" id="details-35">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3501)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3502)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3503)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>   
+             </div>
+        </div>
+
+        <div id="container">
+            <div class="item">
+         <div class="item-header" onclick="toggleDetails(36)">
+             <h2>06. Management Science for Engineers</h2>
+         </div>
+         <div class="item-details" id="details-36">
+             <!-- Unit 1 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3601)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!--    <h4>Unit 1: PDF's & PPT's</h4>
+                <p> <a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a>  -->
+             </div>
+             <!-- Unit 2 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3602)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 2: PDF's & PPT's</h4>
+                <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>
+             <!-- Unit 3 -->
+             <div class="nested-item-header" onclick="toggleNestedDetails(3603)">
+                <h4 class="blinking-text">We Have No Data - We UPdate Soon....</h4>
+                 <!-- <h4>Unit 3: PDF's & PPT's</h4>
+                 <p><a href="">Download PDF</a></p>
+                 <a href="">Download PPT</a> -->
+             </div>   
+             </div>
+        </div>
+
+
+        <style>
+            a {
+                text-decoration: underline;
+                color: blue;
+            }
+        
+            h2 {
+                color: red;
+            }
+        
+            .unit-content {
+                text-align: left;
+                padding-left: 10px;
+            }
+            h4 {
+                color: rgba(231, 39, 39, 0.941);
+            }
+        
+            .unit-content {
+                text-align: left;
+                padding-left: 10px;
+            }
+        
+            .item {
+                text-align: left;
+            }
+        
+            .item-details {
+                display: none;
+            }
+        </style>
+        <script>function toggleDetails(itemNumber) {
+            const detailsElement = document.getElementById(`details-${itemNumber}`);
+            
+            // Toggle visibility
+            if (detailsElement.style.display === "block") {
+                detailsElement.style.display = "none";
+            } else {
+                detailsElement.style.display = "block";
+            }
+            }
+        </script>
+        
+    </section>
+
+    <!------Footer-------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p><b>Self-motivated and hardworking Student seeking an opportunity to work In a challenging <br> Environment to
+            prove my skills and utilize my knowledge.<br> Made by ('-') kasi [H6] </b>
+        </p>
+    </section>
+
+</body>
+</html>
+
